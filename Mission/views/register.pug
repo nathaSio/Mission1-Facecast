@@ -1,0 +1,30 @@
+extends layout
+
+block content
+
+	div#header
+		div.top
+			div#logo
+				//span.image
+					img(src='images/avatar.jpg', alt='')
+				h1#title Facecast
+				p Gestion de figurants
+		div.bottom
+
+	div#main
+		section#contact.four
+			div.container
+				header
+					h2.alt Inscription utilisateur
+					br
+
+					form(action='/register', method='post')
+						div.row
+							div(class='6u 12u$(mobile)')
+								input(type='text',placeholder='Login',name='username')
+							div(class='12u$')
+								input(type='password',placeholder='Mot de passe',name='password')
+								input(type='password',placeholder='Vérification',name='verify')
+							div(class='12u$')
+								input(type='submit')
+				footer

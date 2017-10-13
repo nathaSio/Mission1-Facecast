@@ -1,0 +1,41 @@
+doctype html
+html(lang='fr')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='../assets/css/main.css')
+  body
+    div#header
+      div.top
+        div#logo
+          //span.image
+            img(src='../images/avatar.jpg', alt='')
+          h1#title FaceCast
+          p Gestion de figurants
+
+          nav#nav
+            ul
+              li
+                a(href='/', id='top-link', class='icon fa-home') &nbsp;Accueil
+            ul
+              li
+                a(href='/songs', id='songs-link', class='icon fa-music') &nbsp;Musiques
+            ul
+              li
+                a(href='/users', id='users-link', class='icon fa-users') &nbsp;Utilisateurs
+
+    block content
+
+    div#footer
+      ul.copyright
+        li &copy; Untitled. All right reserved.
+        li Design:
+          a(href="http://html5up.net") HTML5 UP
+
+    script(src='/assets/js/jquery.min.js')
+    script(src='/assets/js/jquery.scrolly.min.js')
+    script(src='/assets/js/jquery.scrollzer.min.js')
+    script(src='/assets/js/skel.min.js')
+    script(src='/assets/js/util.js')
+    script(src='/assets/js/main.js')

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+
+	div#header
+		div.top
+			div#logo
+				//span.image
+					img(src='images/avatar.jpg', alt='')
+				h1#title Facecast
+				p Gestion de figurants
+
+			if user
+				nav#nav
+					ul
+						li
+							a(href='/', id='top-link', class='icon fa-home') &nbsp;Accueil
+
+		div.bottom
+
+	div#main
+		section#top.one.dark.cover
+			div.container
+				header
+					h2#title Site de gestion de figurants
+					br
+
+					if !user
+						a(href='/login') Login
+						br
+					if user
+						p Vous êtes connecté sous #{user.username}
+						a(href='/logout', class='button scrolly') Logout
+				footer 

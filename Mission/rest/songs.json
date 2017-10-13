@@ -1,0 +1,19 @@
+{
+	"songs": [
+		{
+			"titre": "Suppers Ready",
+			"auteur": "Genesis",
+			"genre": "Rock"
+		},
+		{
+			"titre": "Epitaph",
+			"auteur": "King Crimson",
+			"genre": "Rock"
+		},
+		{
+			"titre": "Extreme Ways",
+			"auteur": "Moby",
+			"genre": "Pop"
+		}
+	]
+}

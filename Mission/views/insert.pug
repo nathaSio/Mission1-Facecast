@@ -1,0 +1,21 @@
+extends layout
+block content
+
+	div#main
+		section(id='top', class='one dark cover')
+			div.container
+
+				h2.alt Insertion d'un utilisateur
+				br
+				form(name='adduser',method='post',action='../users/adduser')
+					div.row
+						div(class='12u$')
+							input(type='text',placeholder='Nom',name='nom')
+						div(class='6u 12u$(mobile)')
+							input(type='text',placeholder='Mot de passe',name='passe')
+						div(class='6u 12u$(mobile)')
+							input(type='text',placeholder='Vérification',name='vérif')
+						div(class='12u$')
+							input(type='text',placeholder='Email',name='email')
+						div(class='12u$')
+							input(type='submit')
